@@ -14,28 +14,28 @@ This solution works with ser2net technology (more information about it in: https
 Steps to run this solution:
 1. Install ser2net
 
-     sudo apt install ser2net -y
+		sudo apt install ser2net -y
 
 2. Verify installation:
 
-    ser2net --version
+		ser2net --version
    
 3. Update your ser2net.conf and ser2net.yaml files in /etc folder with (or just download them from this repository and replace the old ones):
 
-     sudo nano /etc/ser2net.conf
-     sudo nano /etc/ser2net.yaml
+     	sudo nano /etc/ser2net.conf
+   		sudo nano /etc/ser2net.yaml
 
-4. Enalbe/restart/stop or check status for ser2net service (don't forget to restart ser2net if you changed .yaml or .conf files):
+5. Enalbe/restart/stop or check status for ser2net service (don't forget to restart ser2net if you changed .yaml or .conf files):
 
-     sudo systemctl enable ser2net
-     sudo systemctl restart ser2net
-     sudo systemctl start ser2net
-     sudo systemctl status ser2net
+		sudo systemctl enable ser2net
+		sudo systemctl restart ser2net
+		sudo systemctl start ser2net
+		sudo systemctl status ser2net
 
-5. Open VSPE and load the configuration. Then change the IP address in TcpClient device to the same as your virtual machine. Leave the port as it is. It should look something like this:
+6. Open VSPE and load the configuration. Then change the IP address in TcpClient device to the same as your virtual machine. Leave the port as it is. It should look something like this:
 
    [VSPE example](https://github.com/user-attachments/assets/5ab0cbd7-219e-4a6e-b750-aaa7aff8b42e)
 
-6. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the network.
-7. In the last step, run .c code in your virtual machine to start simulating Homeduino commands and run Pimatic service.
+7. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the network.
+8. In the last step, run .c code in your virtual machine to start simulating Homeduino commands and run Pimatic service.
 
