@@ -34,7 +34,7 @@ Steps to run this solution:
 
 5. Open VSPE and load the configuration. Then change the IP address in TcpClient device to the same as your virtual machine. Leave the port as it is. It should look something like this:
 
-  [VPSE example](https://github.com/user-attachments/assets/ae2c2cc6-99e2-441e-9f32-40b571fb479f)
+        [VSPE example](https://github.com/user-attachments/assets/eeeb34a2-a0f4-4939-8ec3-a36bc3b900df)
 
 6. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the network.
 7. In the last step, run .c code in your virtual machine to start simulating Homeduino commands and run Pimatic service.
