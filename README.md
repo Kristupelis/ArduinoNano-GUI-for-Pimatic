@@ -9,4 +9,33 @@ The problem is that we would have to have a physical ArduinoNano module, DHT sen
 
 This solution works with ser2net technology (more information about it in: https://github.com/cminyard/ser2net. What I did first was I created a GUI for ArduinoNano and other components using Processing4.3 (Java programming language). It's a very useful tool if you want to create something visually working. This Processing4.3 code also connects to my personal computer virtual port COM1 which was created using VSPE. The only thing left was to update my .c code to not only send and receive data from Pimatic, but also send and receive data from my personal computers Processing4.3 code. For this connection I created a ser2net service (TCP network bridge), changed .yaml and .conf files and that's it. I just had to connect my new /dev/tnt pair with my virtual port on my personal computer via network.
 
-[image](https://github.com/user-attachments/assets/9ff1a95b-86f1-493a-a29a-7d9397fb936d)
+--------------------------------------------------------------------------------------------
+
+Steps to run this solution:
+1. Install ser2net
+
+     sudo apt install ser2net -y
+
+2. Verify installation:
+
+    ser2net --version
+   
+3. Update your ser2net.conf and ser2net.yaml files in /etc folder with (or just download them from this repository and replace the old ones):
+
+     sudo nano /etc/ser2net.conf
+     sudo nano /etc/ser2net.yaml
+
+4. Enalbe/restart/stop or check status for ser2net service (don't forget to restart ser2net if you changed .yaml or .conf files):
+
+     sudo systemctl enable ser2net
+     sudo systemctl restart ser2net
+     sudo systemctl start ser2net
+     sudo systemctl status ser2net
+
+5. Open VSPE and load the configuration. Then change the IP address in TcpClient device to the same as your virtual machine. Leave the port as it is. It should look something like this:
+
+  [VPSE example](https://github.com/user-attachments/assets/ae2c2cc6-99e2-441e-9f32-40b571fb479f)
+
+6. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the network.
+7. In the last step, run .c code in your virtual machine to start simulating Homeduino commands and run Pimatic service.
+
