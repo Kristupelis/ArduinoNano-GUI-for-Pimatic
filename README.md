@@ -52,3 +52,5 @@ Steps to run this solution:
 		./VhduinoU
 
 13. Everything should be working great! Good luck!
+--------------------------------------------------------------------------------------------
+NOTICE: there needs to be some work done to fullfil this projects' full potential. What I mean by that is that the buttons in Proccesing4.3 GUI don't "work" - after clicking them their behaviour doesn't reflect in Pimatic GUI, while clicking switches/buttons in Pimatic the behaviour is reflected in Processing4.3. If anyone finishes editing VhudinoU.c code and completes this functionallity, you can message me through LinkedIn (https://www.linkedin.com/in/kristupas-cilcius-052b27252/) and I will add you to this project as a contributor.
