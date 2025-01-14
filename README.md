@@ -11,7 +11,7 @@ This solution works with ser2net technology (more information about it in: https
 
 Project scheme:
 
-[image](https://github.com/user-attachments/assets/7825414a-2c95-43c4-b7c1-e09815be5d1d)
+![Project Scheme](https://github.com/user-attachments/assets/7825414a-2c95-43c4-b7c1-e09815be5d1d)
 
 
 --------------------------------------------------------------------------------------------
