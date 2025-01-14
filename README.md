@@ -34,7 +34,7 @@ Steps to run this solution:
 
 5. After running "sudo systemctl status ser2net" you should see something like this:
 
-   [ser2net status example](https://github.com/user-attachments/assets/bc2d6348-4de9-4367-9127-5e130abfc694)
+   ![ser2net status example](https://github.com/user-attachments/assets/bc2d6348-4de9-4367-9127-5e130abfc694)
 
 6. Copy VhduinoU.c file from your Windows computer to your virtual machine with:
 
@@ -46,7 +46,7 @@ Steps to run this solution:
 
 8. Open VSPE and load the configuration file (ser2net.vspe). Then change the IP address in TcpClient device to the same as your **virtual machine**. Leave the port as it is. It should look something like this:
 
-   [VSPE example](https://github.com/user-attachments/assets/5ab0cbd7-219e-4a6e-b750-aaa7aff8b42e)
+   ![VSPE example](https://github.com/user-attachments/assets/5ab0cbd7-219e-4a6e-b750-aaa7aff8b42e)
 
 9. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the virtual machine via network.
 10. In the last step, open two windows of your virtual machine. In the first one run Pimatic and in the second one, run the .c code VhduinoU like this:
