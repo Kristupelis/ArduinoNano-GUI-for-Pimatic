@@ -9,6 +9,11 @@ The problem is that we would have to have a physical ArduinoNano module, DHT sen
 
 This solution works with ser2net technology (more information about it in: https://github.com/cminyard/ser2net). What I did first was I created a GUI for ArduinoNano and other components using Processing4.3 (Java programming language). It's a very useful tool if you want to create something visually working. This Processing4.3 code also connects to my personal computer virtual port COM1 which was created using VSPE. The only thing left was to update my .c code to not only send and receive data from Pimatic, but also send and receive data from my personal computers Processing4.3 code. For this connection I created a ser2net service (TCP network bridge), changed .yaml and .conf files and that's it. I just had to connect my new /dev/tnt pair with my virtual port on my personal computer via network.
 
+Project scheme:
+
+[image](https://github.com/user-attachments/assets/7825414a-2c95-43c4-b7c1-e09815be5d1d)
+
+
 --------------------------------------------------------------------------------------------
 
 Steps to run this solution:
