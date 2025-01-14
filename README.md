@@ -25,12 +25,16 @@ Steps to run this solution:
      	sudo nano /etc/ser2net.conf
    		sudo nano /etc/ser2net.yaml
 
-5. Enalbe/restart/stop or check status for ser2net service (don't forget to restart ser2net if you changed .yaml or .conf files):
+4. Enalbe/restart/stop or check status for ser2net service (don't forget to restart ser2net if you changed .yaml or .conf files):
 
 		sudo systemctl enable ser2net
 		sudo systemctl restart ser2net
 		sudo systemctl start ser2net
 		sudo systemctl status ser2net
+
+5. After running "sudo systemctl status ser2net" you should see something like this:
+
+	![image](https://github.com/user-attachments/assets/bc2d6348-4de9-4367-9127-5e130abfc694)
 
 6. Copy VhduinoU.c file from your Windows computer to your virtual machine with:
 
@@ -44,13 +48,13 @@ Steps to run this solution:
 
    [VSPE example](https://github.com/user-attachments/assets/5ab0cbd7-219e-4a6e-b750-aaa7aff8b42e)
 
-10. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the virtual machine via network.
-11. In the last step, open two windows of your virtual machine. In the first one run Pimatic and in the second one, run the .c code VhduinoU like this:
+9. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the virtual machine via network.
+10. In the last step, open two windows of your virtual machine. In the first one run Pimatic and in the second one, run the .c code VhduinoU like this:
 
 		pimatic.js start
 
 		./VhduinoU
 
-13. Everything should be working great! Good luck!
+11. Everything should be working great! Good luck!
 --------------------------------------------------------------------------------------------
 NOTICE: there needs to be some work done to fullfil this projects' full potential. What I mean by that is that the buttons in Proccesing4.3 GUI don't "work" - after clicking them their behaviour doesn't reflect in Pimatic GUI, while clicking switches/buttons in Pimatic the behaviour is reflected in Processing4.3. If anyone finishes editing VhudinoU.c code and completes this functionallity, you can message me through LinkedIn (https://www.linkedin.com/in/kristupas-cilcius-052b27252/) and I will add you to this project as a contributor.
