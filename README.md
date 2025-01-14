@@ -34,7 +34,7 @@ Steps to run this solution:
 
 5. After running "sudo systemctl status ser2net" you should see something like this:
 
-	![image](https://github.com/user-attachments/assets/bc2d6348-4de9-4367-9127-5e130abfc694)
+   [ser2net status example](https://github.com/user-attachments/assets/bc2d6348-4de9-4367-9127-5e130abfc694)
 
 6. Copy VhduinoU.c file from your Windows computer to your virtual machine with:
 
