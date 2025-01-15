@@ -49,7 +49,7 @@ Steps to run this solution:
 
 		gcc -o VhduinoU VhduinoU.c
 
-8. Open VSPE and load the configuration file (ser2net.vspe). You can dowload VSPE here: https://eterlogic.com/Products.VSPE_Download.html. Then change the IP address in TcpClient device to the same as your **virtual machine**. Leave the port as it is. It should look something like this:
+8. Open VSPE and load the configuration file (ser2net.vspe). You can dowload VSPE here: https://eterlogic.com/Products.VSPE_Download.html. Then change the IP address in TcpClient device to the same as your **virtual machine**. Leave the port as it is (2000). It should look something like this:
 
    ![VSPE example](https://github.com/user-attachments/assets/5ab0cbd7-219e-4a6e-b750-aaa7aff8b42e)
 
