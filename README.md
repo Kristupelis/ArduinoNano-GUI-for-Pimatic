@@ -55,8 +55,8 @@ Steps to run this solution:
 
 8.1 If you need to configure VSPE by your self, then here are 2 photos which show how to set up Connector and TcpClient components:
 
-[image](https://github.com/user-attachments/assets/4c242bcb-6b31-46d9-b4e1-5af6e09ea486)
-[image](https://github.com/user-attachments/assets/f4f728da-b968-4d4c-a6f1-1893d2153ed6)
+[ConnectorComponent](https://github.com/user-attachments/assets/4c242bcb-6b31-46d9-b4e1-5af6e09ea486)
+[TcpClientComponent](https://github.com/user-attachments/assets/f4f728da-b968-4d4c-a6f1-1893d2153ed6)
 
 9. After your ser2net is working, VSPE is set, it's time to run the Processing4.3 code. If it starts, it means that it has connected to the virtual machine via network.
 10. In the last step, open two windows of your virtual machine. In the first one run Pimatic and in the second one, run the .c code VhduinoU like this:
